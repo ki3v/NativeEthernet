@@ -72,6 +72,7 @@ void EthernetServer::begin()
    }
 }
 
+#pragma GCC diagnostic ignored "-Wint-in-bool-context"
 EthernetClient EthernetServer::available()
 {
 	bool listening = false;
